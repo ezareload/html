@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+<meta charset='utf-8'/>
+<meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+<title>Blogger Recent Posts</title>
+<link href="https://project.dimpost.com/camera-slideshow/css/camera.css" id="camera-css" media="all" rel="stylesheet" type="text/css" />
+<script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+<script src="https://project.dimpost.com/camera-slideshow/scripts/jquery.mobile.customized.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"></script>
+<script src="https://project.dimpost.com/camera-slideshow/scripts/camera.min.js" type="text/javascript"></script>
+<style type="text/css">
+.fluid_container {
+    margin: 0 auto;
+    /* aling centered */
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+}
+
+
+/* Blogger CSS Conflict Fix */
+
+.camera_pag_ul {
+    border: none !important;
+    background: none !important;
+}
+
+.camera_pag_ul li {
+    float: inherit !important;
+    padding: inherit !important;
+}
+
+.camera_pag_ul {
+    margin: 0 !important;
+    border: 0 !important;
+}
+
+
+/* jika slider lebih dari 1 maka display:none aja, jika tidak effect loading atas kanan akan error */
+.camera_pie{display:none;}
+</style></head>
+
+<body>
+<!--  End _Slideshow Styles & script -->
+
+<!-- _slideshow camera_wrap-->
+<div class="fluid_container">
+<script type="text/javascript">
+jQuery(function() {
+    jQuery('#camera_wrap_1').camera({
+        time: 2500, // milliseconds between the end of the sliding effect and the start of the nex one
+        transPeriod: 1200, // length of the sliding effect in milliseconds
+        thumbnails: false, // thumnails & tooltip is controlled by it
+        pagination: false, // only when "pagination" is set to "false" thumbnails will be visible
+        fx: 'curtainTopLeft, curtainTopRight, curtainBottomLeft, curtainBottomRight, curtainSliceLeft, curtainSliceRight, blindCurtainTopLeft, blindCurtainTopRight, blindCurtainBottomLeft, blindCurtainBottomRight, blindCurtainSliceBottom, blindCurtainSliceTop, stampede, mosaic, mosaicReverse, mosaicRandom, mosaicSpiral, mosaicSpiralReverse, topLeftBottomRight, bottomRightTopLeft, bottomLeftTopRight, bottomLeftTopRight, scrollLeft, scrollRight, scrollHorz, scrollBottom, scrollTop', // transition effects
+        hover: false, // Pause on hover
+        height: '65%' // slideshow height (50% is default)
+    });
+});
+</script>
+<div class="camera_wrap" id="camera_wrap_1">
+<div data-src="https://1.bp.blogspot.com/-tVe6oqd07DA/XrCfXoIB4HI/AAAAAAAAQms/3v6kZKylrZsIWevYQIGD8ohzuqG9Zi04ACK4BGAsYHg/d/aetronik-1.jpg">
+<div class="camera_caption fadeFromBottom">
+<b>AETRONIK |  </b><em>SERVER PULSA &amp; PPOB  </em> <!-- Caption / tittle gambar-->
+            </div>
+</div>
+<div data-src="https://1.bp.blogspot.com/-VgJHILLq6Eo/XrCfYKUOEkI/AAAAAAAAQmw/yynzBgE-cHwBcsUie37Dh-VmdGNFQiNtgCK4BGAsYHg/d/aetronik-2.jpg">
+<div class="camera_caption fadeFromBottom">
+<b>AETRONIK | </b><em> Transaksi Aman &amp; Lancar  </em> <!-- Caption / tittle gambar-->
+            </div>
+</div>
+</div>
+<div data-src="https://1.bp.blogspot.com/-kBYJVHwWbWg/XrCfYkGrjgI/AAAAAAAAQm0/Md0LfIYL4pMmeLFB_f52dUD0mI9_nc_rwCK4BGAsYHg/d/aetronik-3.jpg">
+<div class="camera_caption fadeFromBottom">
+<b>AETRONIK | </b><em> Transaksi Aman &amp; Lancar  </em> <!-- Caption / tittle gambar-->
+            </div>
+</div>
+<div data-src="https://1.bp.blogspot.com/-09NoaPog5lk/XrCfYxUZSZI/AAAAAAAAQm4/WfgFa57EmdAluOi2ZSfGa4CAh6Zt64SqACK4BGAsYHg/d/aetronik-4.jpg">
+<div class="camera_caption fadeFromBottom">
+<b>www.aetronik.my.id | </b><em> Transaksi Full 24 Jam</em></div>
+</div>
+</div>
+</div>
+</body>
+</html>
