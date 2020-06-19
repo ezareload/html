@@ -679,7 +679,7 @@ width: 100%;
 </div>
 <div class="output row">
 <div>Perkiraan Waktu Baca: <span id="readingTime">0</span></div>
-<div id="readability">Buka Tips Agen Pulsa #1.</div>
+<div id="readability">Buka Tips SEO #1.</div>
 </div>
 <div class="keywords">
 Top Katakunci:
@@ -834,9 +834,9 @@ Top Katakunci:
 <ul id='content2'>
 <li class="slide"><div class="quoteContainer"><p class="quote-phrase">Silahkan pilih opsi ide di atas.</p></div><div class="authorContainer"><p class="quote-author">By Eza Reload.</p></div></li>
 
-<li class="slide"><div class="quoteContainer"><p class="quote-phrase">Agar Masuk #1 Search Google, gunakan katakunci dalam penulisan artikel.</p></div><div class="authorContainer"><p class="quote-author">By Eza Reload</p></div></li>
+<li class="slide"><div class="quoteContainer"><p class="quote-phrase">Agar Masuk #1 Search Google, gunakan katakunci dalam penulisan artikel.</p></div><div class="authorContainer"><p class="quote-author">By Eza Reload.</p></div></li>
 
-<li class="slide"><div class="quoteContainer"><p class="quote-phrase">Silahkan pilih opsi ide di atas.</p></div><div class="authorContainer"><p class="quote-author">By REza Reload.</p></div></li>
+<li class="slide"><div class="quoteContainer"><p class="quote-phrase">Silahkan pilih opsi ide di atas.</p></div><div class="authorContainer"><p class="quote-author">By Eza Reload.</p></div></li>
 </ul>
 
 
@@ -864,7 +864,7 @@ Top Katakunci:
   document.execCommand('copy')
   // Remove the textarea
   document.body.removeChild(textarea)
-  alert('Kode SUKSES di Copy Silahkan Update ke Website atau ke blogger Shobat.');
+  alert('Kode SUKSES di Copy Silahkan Update ke Website atau ke bloggermu.');
 }
 
 
@@ -950,7 +950,7 @@ $(document).ready(function() {
 
   quill.on('text-change', function (delta, source) {
    localStorage.setItem("HASILARTIKEL2", document.getElementById('ql-editor-1').innerHTML);
-  var tambahan2 = "<br/><br/><a href='https://www.elreload.top' style='display:none'>Elreload Server Pulsa &amp; Ppob</a>";
+  var tambahan2 = "<br/><br/><a href='https://www.elreload.top' style='display:none'>Server Pulsa &amp; PPOB</a>";
     return $('.language-markup').text(quill.getHTML()+tambahan2).html(); 
     
   }); 
@@ -1120,15 +1120,14 @@ readability.addEventListener('click', function () {
       readability.innerHTML = readingEase(JSON.parse(this.response).FLESCH_READING);
     } else {
       // We reached our target server, but it returned an error
-      readability.innerHTML = "<a href='#' target='blank'>Pelajari seputar Bisnis Agen Pulsa</a> | <a href='#' target='blank'>Silahkan Daftarkan Diri Anda Disini</a>";
+      readability.innerHTML = "<a href='#' target='_blank'>Pelajari seputar SEO disini</a> | <a href='#' target='blank'>Gunakan Tools Lainnya disini</a>";
 
     }
   };
 
   request.onerror = function () {
     // There was a connection error of some sort
-    readability.innerHTML = "<a href='hhttps://www.elreload.top/' target='blank'>Pelajari seputar Bisnis Agen Pulsa</a> | <a style='color:blue' href='https://www.elreload.top/p/pendaftaran.html' target='blank'>Silahkan Daftarkan Diri Anda Disini</a>";
-</a>";
+    readability.innerHTML = "<a href='https://blog.ezareload.com' target='_blank'>Pelajari seputar SEO disini</a> | <a style='color:blue' href='https://blog.ezareload.com' target='_blank'>Gunakan Tools Lainnya disini</a>";
   };
 });
 
@@ -1407,7 +1406,7 @@ copy.addEventListener("click", () => {
 });
 
 clear.addEventListener("click", () => {
-  textarea.placeholder = "Silahkan Tulis Kembali......";
+  textarea.placeholder = "Berhasil Di Hapus, Silahkan Tulis Kembali......";
   textarea.value = "";
   document.getElementById("ql-editor-1").innerHTML = "";
   document.getElementById("to-copy").innerText = "";
@@ -1614,7 +1613,7 @@ $('#datatot').append(' <txt id="datotna"> Total: ' + totalposts + ' </txt>');
     if (postcontent.length > 130) postcontent = postcontent.substring(0,130);
         
        var poststitle = json.feed.entry[i].title.$t;
-       var suer = '<li id="post' + (i + 1) + '" class="slide"><div class="quoteContainer"><p class="quote-phrase">'+postcontent+'</p></div><div class="authorContainer"><p class="quote-author">IDE Judul: '+ poststitle+'. By Robby Blupartel</p></div></li>';
+       var suer = '<li id="post' + (i + 1) + '" class="slide"><div class="quoteContainer"><p class="quote-phrase">'+postcontent+'</p></div><div class="authorContainer"><p class="quote-author">IDE Judul: '+ poststitle+'. By Eza Reload</p></div></li>';
        $('#content2').append(suer); 
         
 
@@ -1735,7 +1734,7 @@ function click_action_2(){
 $("#datotna").remove();
 var s1 = document.createElement("script");
 s1.type = "text/javascript";
-s1.src = "https://modelbaju-baru.blogspot.com/feeds/posts/default?alt=json-in-script&callback=recentposts";
+s1.src = "https://kompiajaib.com/feeds/posts/default?alt=json-in-script&callback=recentposts";
 $("head").append(s1);
     recentposts();
 }      
@@ -1745,7 +1744,7 @@ function click_action_3(){
 $("#datotna").remove();
 var s12 = document.createElement("script");
 s12.type = "text/javascript";
-s12.src = "https://infobajugamis.blogspot.com/feeds/posts/default?alt=json-in-script&callback=recentposts";
+s12.src = "https://blog.ezareload.com/feeds/posts/default?alt=json-in-script&callback=recentposts";
 $("head").append(s12);
     recentposts();
 }
@@ -1755,14 +1754,19 @@ function click_action_4(){
 $("#datotna").remove();
 var s123 = document.createElement("script");
 s123.type = "text/javascript";
-s123.src = "https://jaketapikjos.blogspot.com/feeds/posts/default?alt=json-in-script&callback=recentposts";
+s123.src = "https://www.mastimon.com/feeds/posts/default?alt=json-in-script&callback=recentposts";
 $("head").append(s123);
     recentposts();
 }
 
 function click_action_5(){
-    alert('CAN AYA DATAAN KER DI UPDATE.');
-
+    $(".slide").remove();
+$("#datotna").remove();
+var s123 = document.createElement("script");
+s123.type = "text/javascript";
+s123.src = "https://www.igniel.com/feeds/posts/default?alt=json-in-script&callback=recentposts";
+$("head").append(s123);
+    recentposts();
 }
 
 $(document).ready(function(){
