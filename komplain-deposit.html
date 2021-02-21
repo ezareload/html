@@ -19,7 +19,7 @@ form.whatsapp-form {
 }
  .whatsapp-form a.send_form {
     color: #fff;
-    background: #1A237E;
+    background: #21a51f;
     text-decoration: none;
     display: inline-block;
     padding: 10px 25px;
@@ -90,9 +90,16 @@ form.whatsapp-form {
 <label> Nama Rekening Pengirim </label>
 </div>
 <div class = "datainput">
+<select id = "wa_select2">
+  <option hidden = 'hidden' selected = 'selected2' value = 'default'> Keterangan Deposit</option>
+  <option value = "1"> Sesuai Tiket </option>
+  <option value = "2"> Tidak Sesuai Tiket </option>
+</select>
+</div>
+<div class = "datainput">
 <input class = "validate" id = "wa_name5" name = "name5" required = "" type = "text" value = '' />
 <span class = "highlight"> </span> <span class = "bar"> </span>
-<label> Keterangan </label>
+<label> Replay Tiket </label>
 </div>
 <!--div class="datainput">
 <input class="validate" id="wa_email" name="email" required="" type="email" value=''/>
@@ -151,6 +158,7 @@ var input_select1 = $("#wa_select :selected").text(),
     input_name2 = $("#wa_name2").val(), 
     input_name3 = $("#wa_name3").val(), 
     input_name4 = $("#wa_name4").val(), 
+    input_select2 = $("#wa_select2 :selected2").text(), 
     input_name5 = $("#wa_name5").val(),
     input_email1 = $("#wa_email").val(), 
     input_number1 = $("#wa_number").val(),
@@ -164,7 +172,8 @@ var blanter_whatsapp = walink + '?phone=' + phone + '&text=' + walink2 + '%0A%0A
     'Nominal Transfer : ' + input_number1 + '%0A' +  
     'Tanggal Transfer : ' + input_name4 + '%0A' +
     'Nama Rekening Pengirim : ' + input_name4 + '%0A' +
-    'Keterangan : ' + input_name5 + '%0A' +
+    'Keterangan Deposit : ' + input_select2 + '%0A'; 
+    'Reply Tiket : ' + input_name5 + '%0A' +
  
 /* Whatsapp Window Open */ 
 window.open(blanter_whatsapp,'_blank'); 
