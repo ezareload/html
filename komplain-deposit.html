@@ -64,7 +64,7 @@ form.whatsapp-form {
 <div class = "datainput">
 <input class = "validate" id = "wa_name2" name = "name2" required = "" type = "text" value = '' />
 <span class = "highlight"> </span> <span class = "bar"> </span>
-<label> ID Atas Nama </label>
+<label> ID Agen Atas Nama </label>
 </div>
   
 <div class = "datainput">
@@ -96,7 +96,7 @@ form.whatsapp-form {
   <div class="datainput">
 <input class="validate" id="wa_name3" name="password" required="" type="text" value=''/>
 <span class="highlight"></span><span class="bar"></span>
-<label> Nama Rekening Pengirim </label>
+<label> Rekening Pengirim Atas Nama </label>
 </div>
 
 <div class = "datainput">
@@ -110,7 +110,7 @@ form.whatsapp-form {
 <div class="datainput">
 <textarea id='wa_textarea' placeholder='' maxlength='5000' row='1' required=""></textarea>
 <span class="highlight"></span><span class="bar"></span>
-<label> Replay Tiket </label>
+<label> Replay Tiket Deposit </label>
 </div>
   
 <a class="send_form" href="javascript:void" type="submit" title="Send to Whatsapp">KIRIM</a>
@@ -150,13 +150,13 @@ var input_select1 = $("#wa_select :selected").text(),
 /* Final Whatsapp URL */
 var blanter_whatsapp = walink + '?phone=' + phone + '&text=' + walink2 + '%0A%0A' +
     '*ID Agen* : ' + input_name1 + '%0A' +
-    '*ID Atas Nama* : ' + input_name2 + '%0A' +
+    '*ID Agen Atas Nama* : ' + input_name2 + '%0A' +
     '*Bank Tujuan* : ' + input_select1 + '%0A' +
     '*Nominal Transfer* : ' + input_number1 + '%0A' +
     '*Tanggal Transfer* : ' + input_number2 + '%0A' +
-    '*Nama Rekening Pengirim* : ' + input_name3 + '%0A'+
+    '*Rekening Pengirim Atas Nama* : ' + input_name3 + '%0A'+
     '*Sesuai Tiket* : ' + input_select2 + '%0A' +
-    '*Replay Tiket* : ' + input_textarea1 + '%0A';
+    '*Replay Tiket Deposit* : ' + input_textarea1 + '%0A';
   
 /* Whatsapp Window Open */
 window.open(blanter_whatsapp,'_blank');
